@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+    <title>The Newsline</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar obj-width">
+            <a href="index.html" onclick="reload()">News.</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search the Topics.." id="search-input">
+                <button id="search-btn">search</button>
+            </div>
+        </div>
+
+        <div class="nav-links obj-width">
+            <ul class="flex">
+                <li class="nav-item" id="Trending" onclick="onNavItemClick('Trending')">Trending</li>
+                <li class="nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="nav-item" id="Entertainment" onclick="onNavItemClick('Entertainment')">Entertainment</li>
+                <li class="nav-item" id="Business" onclick="onNavItemClick('Business')">Business</li>
+                <li class="nav-item" id="Health" onclick="onNavItemClick('Health')">Health</li>
+                <li class="nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                <li class="nav-item" id="Science" onclick="onNavItemClick('Science')">Science</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="blog-container" class="obj-width">
+        
+    </section>
+    
+    <template id="template-card">
+        <div class="blog-items">
+            <img src="https://placehold.co/600x400" alt="*" id="news-image">
+            <h3 id="news-title">Title of the Topic</h3>
+            <h5 id="news-source">from pkpkpk</h5>
+            <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsa error ullam saepe provident consequatur pariatur! Possimus sint ratione, iste, labore ex nesciunt, voluptatibus velit consequatur ullam sunt facere ad.</p>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
